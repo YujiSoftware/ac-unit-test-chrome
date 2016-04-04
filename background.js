@@ -1,11 +1,11 @@
 chrome.contextMenus.create({
     "title" : "ユニットテストを生成",
     "type" : "normal",
-    "contexts" : ["page"],
-    "onclick" : onClick
+    "id": "createUnitTest",
+    "contexts" : ["page"]
 });
 
-function onClick(info, tab) {
+chrome.contextMenus.onClicked.addListener(function(info, tab) {
     chrome.tabs.query({
         "active": true,
         "currentWindow": true
@@ -14,4 +14,4 @@ function onClick(info, tab) {
             "functiontoInvoke": "onClick"
         });
     });
-}
+});
