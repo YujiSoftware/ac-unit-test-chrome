@@ -1,23 +1,22 @@
 chrome.extension.onMessage.addListener(function (message, sender, callback) {
-    if (message.functiontoInvoke == "onClick") {
-      var io = onClick();
-      
-      var code = createJUnit(io);
-      /*
-      switch(prefs.language){
+  if (message.functiontoInvoke == "onClick") {
+    var io = onClick();
+    
+    chrome.storage.sync.get({
+      language: 'Java',
+    }, function(items) {
+      switch(items.language){
         case "Java":
-          code = createJUnit(io);
+          copy(createJUnit(io));
           break;
         case "CSharp":
-          code = createMSTest(io);
+          copy(createMSTest(io));
           break;
         default:
-          throw new Error("Unknown language. [prefs.language=" + prefs.language + "]");
+          throw new Error("Unknown language. [items.language=" + items.language + "]");
       }
-      */
-    
-      copy(code);
-    }
+    });
+  }
 });
 
 function onClick(){
