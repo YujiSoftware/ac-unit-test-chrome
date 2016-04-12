@@ -12,6 +12,8 @@ AtCoder の問題ページから、ユニットテストを生成する Google C
 * Java (JUnit)
 * C# (MS Test)
 
+対応言語の切り替えは、拡張機能 → AC Unit Test の「オプション」で行えます。
+
 ##使い方
 
 1. AtCoder の問題ページを開く
