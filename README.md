@@ -5,7 +5,7 @@ AtCoder の問題ページから、ユニットテストを生成する Google C
 ##ダウンロード
 
 * Firefox 版： [AC Unit Test :: Add-ons for Firefox](https://addons.mozilla.org/ja/firefox/addon/ac-unit-test/ "AC Unit Test :: Add-ons for Firefox")
-* Google Chrome 版： 準備中
+* Google Chrome 版： [AC Unit Test - Chrome ウェブストア](https://chrome.google.com/webstore/detail/lmahhninbclefepjbcdfbcjnancipfmi/ "AC Unit Test - Chrome ウェブストア")
 
 ##対応言語
 
