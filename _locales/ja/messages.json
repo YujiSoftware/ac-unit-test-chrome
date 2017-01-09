@@ -1,0 +1,8 @@
+{
+  "generate": {
+    "message": "ユニットテストを生成"
+  },
+  "extDescription": {
+    "message": "AtCoder の問題ページから、ユニットテストを生成するアドオン"
+  }
+}

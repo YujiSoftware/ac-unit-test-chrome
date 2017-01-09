@@ -1,5 +1,5 @@
 chrome.contextMenus.create({
-    "title" : "ユニットテストを生成",
+    "title" : chrome.i18n.getMessage("generate"),
     "type" : "normal",
     "id": "createUnitTest",
     "contexts" : ["page"],

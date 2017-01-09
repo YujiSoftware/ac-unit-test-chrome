@@ -2,7 +2,8 @@
   "name": "AC Unit Test",
   "version": "1.0.0",
   "manifest_version": 2,
-  "description": "AtCoder の問題ページから、ユニットテストを生成するアドオン",
+  "description": "__MSG_extDescription__",
+  "default_locale": "en",
   
   "permissions" : [
     "http://*.atcoder.jp/tasks/*", 
