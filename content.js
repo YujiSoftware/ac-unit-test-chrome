@@ -41,7 +41,7 @@ function onClick(){
       }
     }
     
-    if(h3.length > 0 && pre.length > 0){
+    if(h3.length > 0 && pre.length > 0 && $(h3[0]).is(":visible")){
       var header = h3[0].textContent.trim();
       var example = pre[0].textContent;
 
@@ -55,11 +55,11 @@ function onClick(){
           example += "\n";
         }
       }
-    
-      if(header.indexOf("入力例") == 0){
+
+      if(header.indexOf("入力例") == 0 || header.indexOf("Sample Input") == 0){
         name = header.replace(/\s+/g, "_");
         input = example;
-      }else if(header.indexOf("出力例") == 0){
+      }else if(header.indexOf("出力例") == 0 || header.indexOf("Sample Output") == 0){
         output = example;
       }
     }
