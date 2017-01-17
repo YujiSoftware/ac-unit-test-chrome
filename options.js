@@ -14,3 +14,5 @@ function restoreOptions() {
 
 document.addEventListener('DOMContentLoaded', restoreOptions);
 document.getElementById("language").addEventListener("change", saveOptions);
+
+document.getElementById("language_label").textContent = chrome.i18n.getMessage("language_label");
