@@ -3,7 +3,10 @@ chrome.contextMenus.create({
     "type" : "normal",
     "id": "createUnitTest",
     "contexts" : ["page"],
-    "documentUrlPatterns": ["http://*.atcoder.jp/tasks/*"]
+    "documentUrlPatterns": [
+        "http://*.atcoder.jp/tasks/*",
+        "https://beta.atcoder.jp/contests/*/tasks/*"
+    ]
 });
 
 chrome.contextMenus.onClicked.addListener(function(info, tab) {
