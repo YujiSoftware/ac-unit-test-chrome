@@ -6,6 +6,7 @@
   "default_locale": "en",
   
   "permissions" : [
+    "https://beta.atcoder.jp/contests/*/tasks/*",
     "http://*.atcoder.jp/tasks/*", 
     "contextMenus",
     "clipboardRead",
@@ -23,6 +24,7 @@
   "content_scripts": [
         {
             "matches": [
+                "https://beta.atcoder.jp/contests/*/tasks/*",
                 "http://*.atcoder.jp/tasks/*"
             ],
             "js": [
